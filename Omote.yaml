@@ -1,0 +1,14 @@
+substitutions:
+  name: "Omote"
+  friendly_name: "Omote"
+  project_name: "ESPHome.Omote"
+  project_version: "0.0.1"
+  factory_reset_disabled: "true"
+  log_level: "ERROR"
+
+dashboard_import:
+  package_import_url: github://Wolverine-14/Omote-ESPHome/Omote.yaml@main
+  import_full_config: false
+
+packages:
+  device_base: !include hardware_config.yaml
