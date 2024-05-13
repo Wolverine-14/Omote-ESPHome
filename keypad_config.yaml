@@ -1,3 +1,74 @@
+script:
+  - id: s1_source
+    then:
+      - logger.log: "Source Button Pressed"
+  - id: s2_channel+
+    then:
+      - logger.log: "Channel+ Button Pressed"
+  - id: s3_volume-
+    then:
+      - logger.log: "Volume- Button Pressed"
+  - id: s4_mute
+    then:
+      - logger.log: "Mute Button Pressed"
+  - id: s5_record
+    then:
+      - logger.log: "Record Buttom Pressed"
+  - id: s6_info
+    then:
+      - logger.log: "Info Button Pressed"
+  - id: s7_right
+    then:
+      - logger.log: "Right Buttton Pressed"
+  - id: s8_volume+
+    then:
+      - logger.log: "Volume+ Button Pressed"
+  - id: s9_ok
+    then:
+      - logger.log: "Ok Button Pressed"
+  - id: s10_down
+    then:
+      - logger.log: "Down Button Pressed"
+  - id: s11_blue
+    then:
+      - logger.log: "Blue Button Pressed"
+  - id: s12_channel-
+    then:
+      - logger.log: "Channel- Button Pressed"
+  - id: s13_red
+    then:
+      - logger.log: "Red Button Pressed"
+  - id: s14_yellow
+    then:
+      - logger.log: "Yellow Button Pressed"
+  - id: s15_green
+    then:
+      - logger.log: "Green Button Pressed"
+  - id: s16_forward
+    then:
+      - logger.log: "Forward Button Pressed"
+  - id: s18_back
+    then:
+      - logger.log: "Back Button Pressed"
+  - id: s19_up
+    then:
+      - logger.log: "Up Button Pressed"
+  - id: s20_left
+    then:
+      - logger.log: "Left Button Pressed"
+  - id: s22_play
+    then:
+      - logger.log: "Play Button Pressed"
+  - id: s23_config
+    then:
+      - logger.log: "Config Button Pressed"
+  - id: s24_rewind
+    then:
+      - logger.log: "Rewind Button Pressed"
+  - id: s25_stop
+    then:
+      - logger.log: "Stop Button Pressed"
+
 binary_sensor:
   - platform: matrix_keypad
     name: source
@@ -6,6 +77,7 @@ binary_sensor:
     col: 0
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s1_source
 
   - platform: matrix_keypad
     name: channel+
@@ -14,6 +86,7 @@ binary_sensor:
     col: 0
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s2_channel+
 
   - platform: matrix_keypad
     name: Volume-
@@ -22,6 +95,7 @@ binary_sensor:
     col: 0
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s3_volume-
 
   - platform: matrix_keypad
     name: mute
@@ -30,6 +104,7 @@ binary_sensor:
     col: 0
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s4_mute
 
   - platform: matrix_keypad
     name: record
@@ -38,6 +113,7 @@ binary_sensor:
     col: 0
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s5_record
 
   - platform: matrix_keypad
     name: info
@@ -46,6 +122,7 @@ binary_sensor:
     col: 1
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s6_info
 
   - platform: matrix_keypad
     name: right
@@ -54,6 +131,7 @@ binary_sensor:
     col: 1
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s7_right
 
   - platform: matrix_keypad
     name: Volume+
@@ -62,6 +140,7 @@ binary_sensor:
     col: 1
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s8_volume+
 
   - platform: matrix_keypad
     name: OK
@@ -70,6 +149,7 @@ binary_sensor:
     col: 1
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s9_ok
 
   - platform: matrix_keypad
     name: down
@@ -78,6 +158,7 @@ binary_sensor:
     col: 1
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s10_down
 
   - platform: matrix_keypad
     name: blue
@@ -86,6 +167,7 @@ binary_sensor:
     col: 2
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s11_blue
 
   - platform: matrix_keypad
     name: channel-
@@ -94,6 +176,7 @@ binary_sensor:
     col: 2
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s12_channel-
 
   - platform: matrix_keypad
     name: red
@@ -102,6 +185,7 @@ binary_sensor:
     col: 2
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s13_red
 
   - platform: matrix_keypad
     name: yellow
@@ -110,6 +194,7 @@ binary_sensor:
     col: 2
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s14_yellow
 
   - platform: matrix_keypad
     name: green
@@ -118,6 +203,7 @@ binary_sensor:
     col: 2
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s15_green
 
   - platform: matrix_keypad
     name: forward
@@ -126,6 +212,7 @@ binary_sensor:
     col: 3
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s16_forward
 
   - platform: matrix_keypad
     name: off
@@ -142,6 +229,7 @@ binary_sensor:
     col: 3
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s18_back
 
   - platform: matrix_keypad
     name: up
@@ -150,6 +238,7 @@ binary_sensor:
     col: 3
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s19_up
 
   - platform: matrix_keypad
     name: left
@@ -158,6 +247,7 @@ binary_sensor:
     col: 3
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s20_left
 
   - platform: matrix_keypad
     name: play
@@ -166,6 +256,7 @@ binary_sensor:
     col: 4
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s22_play
 
   - platform: matrix_keypad
     name: config
@@ -174,6 +265,7 @@ binary_sensor:
     col: 4
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s23_config
 
   - platform: matrix_keypad
     name: rewind
@@ -182,6 +274,7 @@ binary_sensor:
     col: 4
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s24_rewind
 
   - platform: matrix_keypad
     name: stop
@@ -190,3 +283,4 @@ binary_sensor:
     col: 4
     on_press:
       - script.execute: ext1_coutdown
+      - script.execute: s25_stop
