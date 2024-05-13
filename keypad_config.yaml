@@ -2,10 +2,10 @@ script:
   - id: s1_source
     then:
       - logger.log: "Source Button Pressed"
-  - id: s2_channel+
+  - id: s2_channelP
     then:
       - logger.log: "Channel+ Button Pressed"
-  - id: s3_volume-
+  - id: s3_volumeM
     then:
       - logger.log: "Volume- Button Pressed"
   - id: s4_mute
@@ -20,7 +20,7 @@ script:
   - id: s7_right
     then:
       - logger.log: "Right Buttton Pressed"
-  - id: s8_volume+
+  - id: s8_volumeP
     then:
       - logger.log: "Volume+ Button Pressed"
   - id: s9_ok
@@ -32,7 +32,7 @@ script:
   - id: s11_blue
     then:
       - logger.log: "Blue Button Pressed"
-  - id: s12_channel-
+  - id: s12_channelM
     then:
       - logger.log: "Channel- Button Pressed"
   - id: s13_red
@@ -86,7 +86,7 @@ binary_sensor:
     col: 0
     on_press:
       - script.execute: ext1_coutdown
-      - script.execute: s2_channel+
+      - script.execute: s2_channelP
 
   - platform: matrix_keypad
     name: Volume-
@@ -95,7 +95,7 @@ binary_sensor:
     col: 0
     on_press:
       - script.execute: ext1_coutdown
-      - script.execute: s3_volume-
+      - script.execute: s3_volumeM
 
   - platform: matrix_keypad
     name: mute
@@ -140,7 +140,7 @@ binary_sensor:
     col: 1
     on_press:
       - script.execute: ext1_coutdown
-      - script.execute: s8_volume+
+      - script.execute: s8_volumeP
 
   - platform: matrix_keypad
     name: OK
@@ -176,7 +176,7 @@ binary_sensor:
     col: 2
     on_press:
       - script.execute: ext1_coutdown
-      - script.execute: s12_channel-
+      - script.execute: s12_channelM
 
   - platform: matrix_keypad
     name: red
