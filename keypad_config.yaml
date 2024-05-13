@@ -1,0 +1,192 @@
+binary_sensor:
+  - platform: matrix_keypad
+    name: source
+    id: s1
+    row: 0
+    col: 0
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: channel+
+    id: s2
+    row: 1
+    col: 0
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: Volume-
+    id: s3
+    row: 2
+    col: 0
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: mute
+    id: s4
+    row: 3
+    col: 0
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: record
+    id: s5
+    row: 4
+    col: 0
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: info
+    id: s6
+    row: 0
+    col: 1
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: right
+    id: s7
+    row: 1
+    col: 1
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: Volume+
+    id: s8
+    row: 2
+    col: 1
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: OK
+    id: s9
+    row: 3
+    col: 1
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: down
+    id: s10
+    row: 4
+    col: 1
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: blue
+    id: s11
+    row: 0
+    col: 2
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: channel-
+    id: s12
+    row: 1
+    col: 2
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: red
+    id: s13
+    row: 2
+    col: 2
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: yellow
+    id: s14
+    row: 3
+    col: 2
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: green
+    id: s15
+    row: 4
+    col: 2
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: forward
+    id: s16
+    row: 0
+    col: 3
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: off
+    id: s17
+    row: 1
+    col: 3
+    on_press:
+      - deep_sleep.enter: ext1
+
+  - platform: matrix_keypad
+    name: back
+    id: s18
+    row: 2
+    col: 3
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: up
+    id: s19
+    row: 3
+    col: 3
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: left
+    id: s20
+    row: 4
+    col: 3
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: play
+    id: s22
+    row: 1
+    col: 4
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: config
+    id: s23
+    row: 2
+    col: 4
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: rewind
+    id: s24
+    row: 3
+    col: 4
+    on_press:
+      - script.execute: ext1_coutdown
+
+  - platform: matrix_keypad
+    name: stop
+    id: s25
+    row: 4
+    col: 4
+    on_press:
+      - script.execute: ext1_coutdown
