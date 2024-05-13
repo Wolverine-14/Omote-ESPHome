@@ -12,3 +12,4 @@ dashboard_import:
 
 packages:
   device_base: !include hardware_config.yaml
+  buttons_base: !include keypad_config.yaml
