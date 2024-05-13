@@ -219,8 +219,11 @@ binary_sensor:
     id: s17
     row: 1
     col: 3
-    on_press:
-      - deep_sleep.enter: ext1
+    on_double_click:
+      min_length: 50ms
+      max_length: 350ms
+      then:
+        - deep_sleep.enter: ext1
 
   - platform: matrix_keypad
     name: back
