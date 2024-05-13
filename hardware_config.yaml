@@ -86,10 +86,10 @@ wifi:
     - lvgl.widget.update: 
         id: lbl_wifi
         text_color: 0xFF0000
-  # Enable fallback hotspot (captive portal) in case wifi connection fails
-  ap:
-    ssid: "Esphome-Web-89Db8C"
-    password: "r9uZx6achVOo"
+
+esp32_improv:
+  authorizer: none
+
 
 captive_portal:
 
