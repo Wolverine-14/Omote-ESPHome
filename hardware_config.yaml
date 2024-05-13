@@ -215,7 +215,7 @@ lvgl:
     - touchscreen_id: my_touch
   buffer_size: 25%
   update_interval: 0.5s
-  #disp_bg_color: my_black
+  disp_bg_color: 0x000000
   #log_level: INFO
   top_layer:
     widgets:
