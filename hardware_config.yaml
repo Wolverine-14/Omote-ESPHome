@@ -1,6 +1,9 @@
 esphome:
   name: ${name}
   friendly_name: ${friendly_name}
+  project:
+    name: ${project_name}
+    version: ${project_version} 
   on_boot:
     then:
       - script.execute: ext1_coutdown
