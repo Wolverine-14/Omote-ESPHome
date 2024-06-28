@@ -100,6 +100,9 @@ external_components:
   - source: github://pr#6363
     components: [ lvgl ]
     refresh: 0ms
+  - source: github://dmamontov/esphome-blekeyboard
+    components: [ ble_keyboard ]
+    refresh: 0ms
 
 spi:
   clk_pin: 18
