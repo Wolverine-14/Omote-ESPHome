@@ -188,10 +188,10 @@ display:
     id: LCD
     dc_pin: 9
     cs_pin: 5
+    invert_colors: false
     dimensions: 240X320
     auto_clear_enabled: false
     update_interval: never
-    invert_colors: false
 
 touchscreen:
   - platform: ft63x6
