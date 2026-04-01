@@ -18,3 +18,7 @@ lvgl:
           y: 7
           text_align: right
           text_color: 0xFF0000
+  widgets:
+    - label:
+      id: label1
+      text: "test"
