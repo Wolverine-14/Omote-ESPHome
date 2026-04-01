@@ -215,27 +215,6 @@ touchscreen:
               - lvgl.resume:
               - lvgl.widget.redraw:
 
-lvgl:
-  displays:
-    - display_id: LCD
-  touchscreens:
-    - touchscreen_id: my_touch
-  buffer_size: 25%
-  update_interval: 0.5s
-  disp_bg_color: 0x000000
-  #log_level: INFO
-  top_layer:
-    widgets:
-      - label:
-          text: "\uF1EB"
-          id: lbl_wifi
-          hidden: false
-          align: top_right
-          x: -2
-          y: 7
-          text_align: right
-          text_color: 0xFF0000
-
 binary_sensor:
   - platform: gpio
     name: charging
