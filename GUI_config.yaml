@@ -20,5 +20,5 @@ lvgl:
           text_color: 0xFF0000
   widgets:
     - label:
-      id: label1
-      text: "test"
+        id: label1
+        text: "test"
