@@ -215,7 +215,7 @@ binary_sensor:
       - script.execute: s16_forward
 
   - platform: matrix_keypad
-    name: off
+    name: "off"
     id: s17
     row: 1
     col: 3
